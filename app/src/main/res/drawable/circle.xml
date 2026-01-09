@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="oval"
+    tools:ignore="ExtraText">
+    <!-- Background color of the circle -->
+    <solid android:color="#8c52ff" /> <!-- Change this color as needed -->
+    <!-- Border color and width (optional) -->
+    <stroke
+        android:color="#8c52ff" /><!-- Border color -->
+    android:width="2dp" /> <!-- Border width (change as needed) -->
+    <!-- Padding (optional) -->
+    <padding
+        android:left="40dp"
+        android:top="50dp"
+        android:right="40dp"
+        android:bottom="50dp" />
+
+</shape>

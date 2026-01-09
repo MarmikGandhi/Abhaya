@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:layout_gravity="center"
+    tools:context=".signin_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="UselessParent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="141dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-27dp"
+            android:layout_marginLeft="-27dp"
+            android:layout_marginTop="52dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/logg"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/welcomeback1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/welcome_back"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="192dp"
+            android:alpha="0.7"
+            android:text="@string/Sign_in_to_continue"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="250dp"
+    android:background="#FFFCFC"
+    android:elevation="10dp"
+    app:cardElevation="600dp"
+    tools:ignore="UnusedAttribute">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="28dp"
+        android:paddingTop="15dp"
+        android:paddingRight="28dp"
+        android:paddingBottom="55dp">
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:text="@string/email"
+            android:textColor="#232323"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/emailbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:drawableStart="@drawable/email_icon"
+            android:inputType="textEmailAddress"
+            tools:ignore="LabelFor,RtlCompat,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:text="@string/password"
+            android:textColor="#232323"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:background="#000000">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/passwordbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/password_icon"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor,RtlCompat,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/signinoption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:text="@string/forgot_password"
+            android:textSize="15sp"
+            tools:ignore="TextSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+
+
+        <Button
+            android:id="@+id/nextbutton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/next"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="#7C59BA"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/signupoption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/not_yet_registered_signup_now"
+            android:textSize="15sp"
+            tools:ignore="TextSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
