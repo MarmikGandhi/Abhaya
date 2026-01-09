@@ -82,6 +82,6 @@ Developed by **Marmik Gandhi** Feel free to connect:
 
 ---
 
-## 📜 License
+## License
 
 This project is for educational purposes only.
